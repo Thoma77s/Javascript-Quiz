@@ -121,8 +121,8 @@ body{
     font-weight: 600;
 }
 .quiz_box header .timer{
-    color: #004085;
-    background: #cce5ff;
+    color: white;
+    background: purple;
     border: 1px solid #b8daff;
     height: 45px;
     padding: 0 8px;
@@ -142,11 +142,11 @@ body{
     font-weight: 500;
     height: 30px;
     width: 45px;
-    color: #fff;
+    color: black;
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #343a40;
+    background: white;
     border: 1px solid #343a40;
     user-select: none;
 }
@@ -155,7 +155,7 @@ body{
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #007bff;
+    background: purple;
 }
 section{
     padding: 25px 30px 20px 30px;
@@ -170,7 +170,7 @@ section .option_list{
     display: block;   
 }
 section .option_list .option{
-    background: aliceblue;
+    background: purple;
     border: 1px solid #84c5fe;
     border-radius: 5px;
     padding: 8px 15px;
@@ -181,23 +181,24 @@ section .option_list .option{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 section .option_list .option:last-child{
     margin-bottom: 0px;
 }
 section .option_list .option:hover{
-    color: #004085;
-    background: #cce5ff;
+    color: purple;
+    background: white;
     border: 1px solid #b8daff;
 }
 section .option_list .option.correct{
-    color: #155724;
-    background: #d4edda;
+    color: white;
+    background: green;
     border: 1px solid #c3e6cb;
 }
 section .option_list .option.incorrect{
-    color: #721c24;
-    background: #f8d7da;
+    color: white;
+    background: red;
     border: 1px solid #f5c6cb;
 }
 section .option_list .option.disabled{

@@ -8,9 +8,13 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show info box
+    quiz_box.classList.add("activeQuiz"); //show quiz box
+    showQuetions(0); //calling showQestions function
+    queCounter(1); //passing 1 parameter to queCounter
+    startTimer(75); //calling startTimer function
+    startTimerLine(0); //calling startTimerLine function
 }
-let timeValue =  15;
+let timeValue =  75;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -22,7 +26,7 @@ const restart_quiz = result_box.querySelector(".buttons .restart");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 15; 
+    timeValue = 75; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -38,8 +42,6 @@ restart_quiz.onclick = ()=>{
 }
 
 const bottom_ques_counter = document.querySelector("footer .total_que");
-// if Next Que button clicked
-
 // getting questions and options from array
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
@@ -68,13 +70,20 @@ function optionSelected(answer){
     let userAns = answer.textContent; //getting user selected option
     let correcAns = questions[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
+    que_count++; //increment the que_count value
+    que_numb++; //increment the que_numb value
+    
     
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
         userScore += 1; //upgrading score value with 1
         answer.classList.add("correct"); //adding green color to correct selected option
         answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
+        que_count++; //increment the que_count value
+        que_numb++; //increment the que_numb value
         console.log("Correct Answer");
         console.log("Your correct answers = " + userScore);
+        
+        
     }else{
         answer.classList.add("incorrect"); //adding red color to correct selected option
         answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
@@ -84,13 +93,14 @@ function optionSelected(answer){
                 option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
                 console.log("Auto selected correct answer.");
+                
             }
         }
+        
     }
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
-    next_btn.classList.add("show"); //show the next button if user selected any option
 }
 function showResult(){
     info_box.classList.remove("activeInfo"); //hide info box
