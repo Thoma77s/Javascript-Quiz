@@ -1,114 +1,112 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "Inside which HTML element do we put the JavaScript?",
+    answer: "script",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "javascript",
+      "js",
+      "script",
+      "scripting"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "How do you create a function?",
+    answer: "function myFunction()",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "function:myFunction()",
+      "function=myFunction()",
+      "function myFunction()",
+      "myFunction():function"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "How do you write a conditional statement for executing some statements only if i is equal to 5?",
+    answer: "if (i==5)",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "if i==5 then",
+      "if (i==5)",
+      "if i=5 then",
+      "if i=5"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "How does a for loop start?",
+    answer: "for (i = 0; i <= 5; i++)",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "for (i = 0; i <= 5)",
+      "for (i = 0; i <= 5; i++)",
+      "for i = 1 to 5",
+      "for (i <= 5; i++)"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "How do you round the number 7.25, to the nearest whole number?",
+    answer: "Math.round(7.25)",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Math.rnd(7.25)",
+      "round(7.25)",
+      "rnd(7.25)",
+      "Math.round(7.25)"
     ]
   },
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
    {
     numb: 6,
-    question: "Your Question is Here",
-    answer: "Correct answer of the question is here",
+    question: "In JavaScript, the expression x!=y returns false if:",
+    answer: "the variables are equal.",
     options: [
-      "Option 1",
-      "option 2",
-      "option 3",
-      "option 4"
+      "the variables are equal.",
+      "x is less than y.",
+      "the variables are not equal.",
+      "None of the above."
     ]
   },
   {
     numb: 7,
-    question: "Your Question is Here",
-    answer: "Correct answer of the question is here",
+    question: "When you want to use JavaScript to manipulate the browser window, the browser window's JavaScript object name is:",
+    answer: "Window",
     options: [
-      "Option 1",
-      "option 2",
-      "option 3",
-      "option 4"
+      " Frame",
+      "Document",
+      "Window",
+      "browser_window"
     ]
   },
   {
     numb: 8,
-    question: "Your Question is Here",
-    answer: "Correct answer of the question is here",
+    question: "Alert(message), close() and reset() are JavaScript:",
+    answer: "Methods",
     options: [
-      "Option 1",
-      "option 2",
-      "option 3",
-      "option 4"
+      "Objects",
+      "Methods",
+      "Properties",
+      "commands"
     ]
   },
   {
     numb: 9,
-    question: "Your Question is Here",
-    answer: "Correct answer of the question is here",
+    question: "A named element in a JavaScript program that is used to store and retrieve data is a",
+    answer: "Variable",
     options: [
-      "Option 1",
-      "option 2",
-      "option 3",
-      "option 4"
+      "Method",
+      "Assignment operator",
+      "Variable",
+      "string"
     ]
   },
   {
     numb: 10,
-    question: "Your Question is Here",
-    answer: "Correct answer of the question is here",
+    question: "In JavaScript, which of the following is NOT an assignment operator?",
+    answer: "||",
     options: [
-      "Option 1",
-      "option 2",
-      "option 3",
-      "option 4"
+      "+=",
+      "||",
+      "*=",
+      "="
     ]
   },
 ];
